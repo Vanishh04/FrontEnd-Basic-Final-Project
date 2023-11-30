@@ -1,0 +1,152 @@
+$rounded-bottom: 0 0 12px 12px;
+$grey--1:#CACADB;
+$grey--2:#E7E7F2;
+
+/*---------------------------------------------------------------------------
+                              root
+---------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* for text properties */
+
+$fz38: 38px;
+$fz30: 30px;
+$fz22: 22px;
+$fz18: 18px;
+$fz16: 16px;
+$fz14: 14px;
+
+$fw400: 400;
+$fw700: 700;
+
+$lh47: 46.32px;
+$lh37: 36.57px;
+$lh27: 26.82px;
+$lh26: 26px;
+$lh20: 20px;
+$lh17: 17.07px;
+$lh15: 14.63px;
+
+.fz38{
+    font-size: $fz38;
+}
+.fz30{
+    font-size: $fz30;
+}
+.fz22{
+    font-size: $fz22;
+}
+.fz18{
+    font-size: $fz18;
+}
+.fz16{
+    font-size: $fz16;
+}
+.fz14{
+    font-size: $fz14;
+}
+.fw700{
+    font-weight: $fw700;
+}
+.fw400{
+    font-weight: $fw400;
+}
+.lh47{
+    line-height: $lh47;
+}
+.lh37{
+    line-height: $lh37;
+}
+.lh27{
+    line-height: $lh27;
+}
+.lh20{
+    line-height: $lh20;
+}
+.lh26{
+    line-height: $lh26;
+}
+.lh17{
+    line-height: $lh17;
+}
+.lh15{
+    line-height: $lh15;
+}
+
+/* for color properties */
+
+$main-regular:#323264;
+$main-soft:#46466E;
+$main-alt:#686887;
+
+$accent:#F0145A;
+$white:#ffffff;
+
+$active-regular:#24A3FF;
+$active-hover:#0085FF;
+$active-active:#006CCF;
+
+$grey-bg:#F5F5FA;
+$grey-big-alt:#EDEDF7;
+$grey-text:#B3B3BA;
+$grey-separator:#E6E6F0;
+
+$gradient-regular:linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$gradient-soft:linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$gradient-red:linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+$gradient-supersoft:linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-redtext:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+/*  for flex properties */
+
+$gap15: 15px;
+$gap18: 18px;
+$gap26: 26px;
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-center{
+    justify-content: center;
+}
+.content-between{
+    justify-content: space-between;
+}
+.content-end{
+    justify-content: flex-end;
+}
+.items-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.gap15{
+    gap:$gap15;
+}
+.gap18{
+    gap:$gap18;
+}
+.gap26{
+    gap:$gap26;
+}
+
+/* container */
+
+.container{
+    max-width: 1320px + 30px * 2;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}

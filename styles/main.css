@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------------------------------------------
+                              root
+---------------------------------------------------------------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* for text properties */
+.fz38 {
+  font-size: 38px;
+}
+
+.fz30 {
+  font-size: 30px;
+}
+
+.fz22 {
+  font-size: 22px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.fz16 {
+  font-size: 16px;
+}
+
+.fz14 {
+  font-size: 14px;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.lh47 {
+  line-height: 46.32px;
+}
+
+.lh37 {
+  line-height: 36.57px;
+}
+
+.lh27 {
+  line-height: 26.82px;
+}
+
+.lh20 {
+  line-height: 20px;
+}
+
+.lh26 {
+  line-height: 26px;
+}
+
+.lh17 {
+  line-height: 17.07px;
+}
+
+.lh15 {
+  line-height: 14.63px;
+}
+
+/* for color properties */
+/*  for flex properties */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.content-end {
+  justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.gap15 {
+  gap: 15px;
+}
+
+.gap18 {
+  gap: 18px;
+}
+
+.gap26 {
+  gap: 26px;
+}
+
+/* container */
+.container {
+  max-width: 1380px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------
+                            HOMEPAGE
+------------------------------------------------------------------------------*/
+.section-gradient {
+  min-height: 100vh;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0 0 12px 12px;
+  position: relative;
+}
+.section-gradient__shadow {
+  position: absolute;
+  height: 10px;
+  background-color: #CACADB;
+  border-radius: 0 0 12px 12px;
+  width: 100%;
+}
+.section-gradient__shadow--1 {
+  bottom: -10px;
+  width: calc(100% - 40px);
+  left: 20px;
+}
+.section-gradient__shadow--2 {
+  bottom: -20px;
+  width: calc(100% - 80px);
+  left: 40px;
+  background-color: #E7E7F2;
+}
+
+.main-wrap {
+  position: relative;
+  min-height: 100vh;
+}
+.main-wrap-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.main-wrap-bg__h {
+  height: 100%;
+}
+.main-wrap__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  position: relative;
+  z-index: 100;
+}
+
+.header-grid {
+  border: 3px solid black;
+  padding: 5px;
+  color: #ffffff;
+  display: grid;
+  grid-template-areas: "info", "logo", "nav";
+}
+.header-grid__logo, .header-grid__info, .header-grid__nav {
+  padding: 20px;
+}
+.header-grid__logo {
+  border: 1px solid #ffffff;
+  grid-area: logo;
+}
+.header-grid__info {
+  border: 1px solid red;
+  grid-area: info;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-grid__nav {
+  border: 1px solid green;
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-end;
+}/*# sourceMappingURL=main.css.map */

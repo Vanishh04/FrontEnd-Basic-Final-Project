@@ -1,0 +1,83 @@
+@import './reset';
+@import './style';
+/*----------------------------------------------------------------------------
+                            HOMEPAGE
+------------------------------------------------------------------------------*/
+
+.section-gradient{
+    min-height: 100vh;
+    background: $gradient-supersoft;
+    border-radius: $rounded-bottom;
+    position: relative;
+    &__shadow{
+       position: absolute;
+       height: 10px;
+       background-color: $grey--1;
+       border-radius: $rounded-bottom;
+       width: 100%;
+       &--1{
+          bottom: -10px;
+          width: calc(100% - 40px);
+          left: 20px;
+       }
+       &--2{
+        bottom: -20px;
+        width: calc(100% - 80px);
+        left: 40px;
+        background-color: $grey--2;
+     }
+    }
+}
+
+.main-wrap{
+    position: relative;
+    min-height: 100vh;
+    &-bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+        &__h{
+            height: 100%;
+        }
+    }
+    &__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        position: relative;
+        z-index: 100;
+    }
+}
+
+.header-grid{
+    border: 3px solid black;
+    padding: 5px;
+    color: $white;
+    display: grid;
+    grid-template-areas: 'info', 'logo', 'nav';
+    &__logo, 
+    &__info, 
+    &__nav{
+        padding: 20px;
+    }
+    &__logo{
+        border: 1px solid $white;
+        grid-area: logo;
+    }
+    &__info{
+        border: 1px solid red;
+        grid-area: info;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__nav{
+        border: 1px solid green;
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

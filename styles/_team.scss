@@ -5,12 +5,13 @@
     }
     &-carousel-item{
         background-color: $grey-bg;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
+        display: flex;
     }
     &-carousel-item__img{
         max-width: 400px;
-        width: 100%;
+    }
+    &-carousel__content-box{
+        max-width: 860px;
     }
     &-section-main-title__link{
         padding-bottom: 5px;

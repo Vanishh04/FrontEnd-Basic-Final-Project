@@ -352,12 +352,13 @@ html {
 }
 .team-carousel-item {
   background-color: #F5F5FA;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
+  display: flex;
 }
 .team-carousel-item__img {
   max-width: 400px;
-  width: 100%;
+}
+.team-carousel__content-box {
+  max-width: 860px;
 }
 .team-section-main-title__link {
   padding-bottom: 5px;

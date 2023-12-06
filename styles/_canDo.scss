@@ -1,0 +1,37 @@
+.canDo-section{
+    padding:60px 0 60px;
+    &-main-title__link{
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 2px;
+        padding-bottom: 10px;
+        transition: all 0.8s ease;
+        &:hover{
+            color: $accent;
+        }
+        &-arrow{
+            width: 27px;
+            height: 27px;
+        }
+    }
+    &-main-title__title{
+        background: $gradient-redtext;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 60px;
+    }
+    &__item{
+        padding-bottom: 60px;
+    }
+    &__item-title{
+       padding-top: 30px;
+       color: $active-active;
+    }
+    &__item-textbox{
+        padding-top: 15px;
+    }
+}

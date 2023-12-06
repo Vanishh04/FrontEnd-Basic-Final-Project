@@ -2,6 +2,9 @@ $rounded-bottom: 0 0 12px 12px;
 $grey--1:#CACADB;
 $grey--2:#E7E7F2;
 
+$md:768px;
+$sm:576px;
+
 /*---------------------------------------------------------------------------
                               root
 ---------------------------------------------------------------------------*/
@@ -149,4 +152,56 @@ $gap26: 26px;
     width: 100%;
     padding: 0 30px;
     margin: 0 auto;
+}
+
+.link{
+    text-decoration: none;
+    color: $white;
+}
+
+.btn{
+    &-sm{
+        background-color: transparent;
+        border: none;
+        color: $white;
+        border-radius: 8px;
+        padding: 5px 7px;
+        transition: all 0.8s ease;
+        &.active, &:hover{
+            background-color: $accent;
+        }
+    }
+}
+
+.offcanvas{
+    border-radius: 8px 8px 0 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.section{
+    &-main-title__title{
+        background: $gradient-redtext;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &-main-title__link{
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 2px;
+        transition: all 0.8s ease;
+        &:hover{
+            color: $accent;
+        }
+        &-arrow{
+            width: 27px;
+            height: 27px;
+        }
+    }
 }

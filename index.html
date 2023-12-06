@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HLegal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -16,21 +17,184 @@
           </div>
           <div class="main-wrap__section">
                 <header class="main-wrap__header">
-                    <div class="container">
-                        <div class="header-grid">
-                            <div class="header-grid__logo">Logo</div>
-                            <div class="header-grid__info">Info info info</div>
-                            <div class="header-grid__nav">Navigation</div>
+                    <nav class="navbar navbar-dark navbar-expand-sm">
+                        <div class="container">
+                          <div class="header-grid w-100">
+                            <div class="header-grid__logo d-flex justify-content-between align-items-center">
+                                <a class="navbar-brand" href="#">
+                                    <object data="./assets/images/SVG icon/Logo.svg" type=""></object>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                              </div>
+                              
+                              <div class="header-grid__info d-none d-sm-flex align-items-center gap-3 justify-content-md-end justify-content-start">
+                                <div class="lang-wrap d-flex gap-1">
+                                    <button class="btn-sm">Ук</button>
+                                    <button class="btn-sm">Ру</button>
+                                    <button class="btn-sm active">En</button>
+                                </div>
+                                <address class="d-flex align-items-center gap-3 m-0">
+                                    <p class="address-item mb-0">Kyiv, Mechnikova str, 14/1</p>
+                                    <p class="address-item mb-0">0800 211 927</p>
+                                    <a href="" class=" address-item mb-0">
+                                        <object data="./assets/images/SVG icon/Facebook-Header.svg" type=""></object>
+                                    </a>
+                                </address>
+                              </div>
+                              <div class="offcanvas offcanvas-bottom text-bg-light header-grid__nav" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                                <div class="offcanvas-header justify-content-end">
+                                  <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body justify-content-md-end justify-content-start">
+                                    <nav class="body-nav d-flex justify-content-center align-items-center">
+                                        <ul class="d-flex gap-3 flex-sm-row flex-column justify-content-center">
+                                            <li><a class="link nav-link-h fz24 fw700" href="">about us</a></li>
+                                            <li><a class="link nav-link-h fz24 fw700" href="">services</a></li>
+                                            <li><a class="link nav-link-h fz24 fw700" href="">team</a></li>
+                                            <li><a class="link nav-link-h fz24 fw700" href="">publications</a></li>
+                                            <li><a class="link nav-link-h fz24 fw700" href="">contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                              </div>
+                          </div>
                         </div>
-                    </div>
+                    </nav>
                 </header>
+                <div class="main-wrap__content">
+                    <div class="container">
+                        <h1 class="text-light d-flex justify-content-center fz38 fw70 lh47 main-wrap__title">you legal solutions provider</h1>
+                    </div>
+                </div>
+                <div class="main-wrap__button-scroll">
+                    <div class="d-flex justify-content-center pb-5">
+                        <a class="btn-circle" href="#carousel-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-caret-down" class="btn-circle__icon" viewBox="0 0 16 16">
+                                <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
            </div>
-            <div class="main-wrap__title">Main title</div>
-            <div class="main-wrap__button-scroll">Button</div>
         </main>
-       
-        <section></section>
-        <section></section>
+        <section class="carousel-section" id="carousel-section">
+            <div class="container-lg">
+                <div id="carouselExampleIndicators" class="carousel slide d-grid">
+                    <div class="carousel-indicators carousel-indicators-h">
+                       <div class="carousel-indicators__btn">
+                        <button type="text-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Consistent</button>
+                        <button type="text-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" >Customer oriented</button>
+                        <button type="text-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" >Innovative</button>
+                        <button type="text-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" >Business oriented</button>
+                       </div>
+                    </div>
+                    <div class="carousel-inner text-light">
+                      <div class="carousel-item active">
+                        <h1 class="pt-0 text-start fz30 fw700 lh37 pb-5">We turn the idea of legal services</h1>
+                        <p class="fz19 fw400 lh30">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                     </div>
+                      <div class="carousel-item">
+                        <h1 class="pt-0 text-start fz30 fw700 lh37 pb-5">We turn the idea of legal services</h1>
+                        <p class="fz19 fw400 lh30">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <h1 class="pt-0 text-start fz30 fw700 lh37 pb-5">We turn the idea of legal services</h1>
+                        <p class="fz19 fw400 lh30">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <h1 class="pt-0 text-start fz30 fw700 lh37 pb-5">We turn the idea of legal services</h1>
+                        <p class="fz19 fw400 lh30">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="canDo-section" id="canDo-section">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="canDo-section-main-title section-main-title">
+                        <a href="" class="canDo-section-main-title__link  section-main-title__link fz14 fw700 lh18">
+                            Services
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short canDo-section-main-title__link-arrow" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                            </svg>
+                        </a>
+                        <h1 class="canDo-section-main-title__title section-main-title__title fz38 fw700 lh47">What can we do better than others?</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="canDo-section__item col-12 col-sm-6 col-lg-4">
+                        <img class="canDo-section__item-img" src="./assets/images/SVG icon/cando1.svg" alt="">
+                        <h1 class="canDo-section__item-title fz22 fw700 lh27">IT and e-commerce</h1>
+                        <p class="canDo-section__item-textbox fz16 fw400 lh27 text-light">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+                    </div>
+                    <div class="canDo-section__item col-12 col-sm-6 col-lg-4">
+                        <img class="canDo-section__item-img" src="./assets/images/SVG icon/cando2.svg" alt="">
+                        <h1 class="canDo-section__item-title fz22 fw700 lh27">Comprehensive daily <br> legal support</h1>
+                        <p class="canDo-section__item-textbox fz16 fw400 lh27 text-light">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+                    </div>
+                    <div class="canDo-section__item col-12 col-sm-6 col-lg-4">
+                        <img class="canDo-section__item-img" src="./assets/images/SVG icon/cando3.svg" alt="">
+                        <h1 class="canDo-section__item-title fz22 fw700 lh27">Structuring corporate <br> relationships</h1>
+                        <p class="canDo-section__item-textbox fz16 fw400 lh27 text-light">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
+                    </div>
+                    <div class="canDo-section__item col-12 col-sm-6 col-lg-4">
+                        <img class="canDo-section__item-img" src="./assets/images/SVG icon/cando4.svg" alt="">
+                        <h1 class="canDo-section__item-title fz22 fw700 lh27">Building contractual relations</h1>
+                        <p class="canDo-section__item-textbox fz16 fw400 lh27 text-light">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+                    </div>
+                    <div class="canDo-section__item col-12 col-sm-6 col-lg-4">
+                        <img class="canDo-section__item-img" src="./assets/images/SVG icon/cando5.svg" alt="">
+                        <h1 class="canDo-section__item-title fz22 fw700 lh27">Protection of business, <br> intellectual property</h1>
+                        <p class="canDo-section__item-textbox fz16 fw400 lh27 text-light">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+                    </div>
+                    <div class="canDo-section__item col-12 col-sm-6 col-lg-4">
+                        <img class="canDo-section__item-img" src="./assets/images/SVG icon/cando6.svg" alt="">
+                        <h1 class="canDo-section__item-title fz22 fw700 lh27">Judicial representation</h1>
+                        <p class="canDo-section__item-textbox fz16 fw400 lh27 text-light">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+        <section class="team-section" id="team-section">
+            <div class="container-lg">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="team-carousel-item carousel-item active">
+                           <img src="./assets/images/images/image.png" alt="" class="team-carousel-item__img">
+                           <div class="team-carousel__content-box">
+                            <div class="team-carousel-item-main-title team-section-main-title section-main-title">
+                                <a href="" class="team-section-main-title__link section-main-title__link fz14 fw700 lh18">
+                                    Команда
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short canDo-section-main-title__link-arrow" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                    </svg>
+                                </a>
+                              <h1 class="team-section-main-title__title section-main-title__title fz38 fw700 lh47">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
+                              </div>
+                             <p class="team-carousel-item__title fz16 fw700 lh20">Олександр Олександровський</p>
+                             <p class="team-carousel-item__sub-title fz14 fw400 lh22">Керуючий партнер</p>
+                           </div>
+                        </div>
+                      <div class="carousel-item">
+                        
+                      </div>
+                      <div class="carousel-item">
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

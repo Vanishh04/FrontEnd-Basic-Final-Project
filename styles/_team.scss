@@ -1,0 +1,29 @@
+.team{
+    &-section{
+        background-color: $white;
+        padding-top: 60px;
+    }
+    &-carousel-item{
+        background-color: $grey-bg;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    &-carousel-item__img{
+        max-width: 400px;
+        width: 100%;
+    }
+    &-section-main-title__link{
+        padding-bottom: 5px;
+    }
+    &-section-main-title__title{
+        padding-bottom: 30px;
+    }
+    &-carousel-item__title{
+        color: $grey-text;
+        padding-bottom: 6px;
+    }
+    &-carousel-item__sub-title{
+        color: $grey-text;
+        padding-bottom: 30px;
+    }
+}

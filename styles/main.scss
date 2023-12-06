@@ -1,5 +1,8 @@
 @import './reset';
 @import './style';
+@import './carousel';
+@import './canDo';
+@import './team';
 /*----------------------------------------------------------------------------
                             HOMEPAGE
 ------------------------------------------------------------------------------*/
@@ -51,33 +54,68 @@
         position: relative;
         z-index: 100;
     }
+    &__title{
+        padding: 0 30px;
+    }
 }
 
 .header-grid{
-    border: 3px solid black;
     padding: 5px;
     color: $white;
     display: grid;
-    grid-template-areas: 'info', 'logo', 'nav';
-    &__logo, 
-    &__info, 
-    &__nav{
-        padding: 20px;
+    width: 100%;
+    grid-template-areas: 'info''logo' 'nav';
+    row-gap: 18px;
+    @media screen and (min-width:$md) {
+        grid-template-areas: 'logo info' 'logo nav';
     }
     &__logo{
-        border: 1px solid $white;
         grid-area: logo;
     }
     &__info{
-        border: 1px solid red;
         grid-area: info;
-        display: flex;
-        justify-content: flex-end;
     }
     &__nav{
-        border: 1px solid green;
         grid-area: nav;
-        display: flex;
-        justify-content: flex-end;
+    }
+}
+
+.address-item{
+    display: flex;
+    align-items: center;
+    &::before{
+        content: '';
+        position: relative;
+        height: 6px;
+        width: 6px;
+        background-color: $grey--1;
+        border-radius: 50%;
+        display: inline-block;
+        right: 8px;
+    }
+}
+
+.nav-link-h{
+    color: $active-regular;
+    @media  screen and (min-width:$sm) {
+        color: $white;
+    }
+}
+
+.btn-circle{
+    background-color: transparent;
+    border: 1px solid $grey--1;
+    border-radius: 50%;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey--1;
+    cursor: pointer;
+    &__icon{
+        fill: $grey--1;
+        
     }
 }

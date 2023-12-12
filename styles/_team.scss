@@ -2,29 +2,67 @@
     &-section{
         background-color: $white;
         padding-top: 60px;
+        padding-bottom: 60px;
     }
-    &-carousel-item{
+    &-carousel__text-box{
+        padding: 30px;
+    }
+    &-carousel__content-box{
         background-color: $grey-bg;
-        display: flex;
+        border-radius: 8px;
+    }
+    &-carousel-item__title{
+        padding-top: 30px;
+        color: $grey-text;
+    }
+    &-carousel-item__sub-title{
+        padding-top: 6px;
+        color: $grey-text;
     }
     &-carousel-item__img{
         max-width: 400px;
+        width: 100%;
+    }
+    &-carousel-inner{
+       padding: 0;
     }
     &-carousel__content-box{
-        max-width: 860px;
+        display: flex;
     }
-    &-section-main-title__link{
-        padding-bottom: 5px;
+    &-carousel__text-box{
+        max-width: 1140px;
+        width: 100%;
     }
-    &-section-main-title__title{
-        padding-bottom: 30px;
+}
+
+.team-btn-circle{
+    border: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $active-regular;
+    transition: all 0.8s ease;
+    &.active{
+        background-color: $active-active;
     }
-    &-carousel-item__title{
-        color: $grey-text;
-        padding-bottom: 6px;
+    &:hover{
+        background-color: $active-hover;
     }
-    &-carousel-item__sub-title{
-        color: $grey-text;
-        padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .team-carousel-inner {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 1220px){
+    .team-carousel__content-box{
+        flex-wrap: wrap;
+    }
+    .team-carousel-item__img{
+        max-width: 350px;
+        width: 100%;
     }
 }

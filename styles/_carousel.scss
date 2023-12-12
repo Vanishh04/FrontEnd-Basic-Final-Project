@@ -32,7 +32,7 @@
     }
 }
 
-.carousel.slide{
+.main-carousel.main-slide{
     grid-template-columns: 100%;
     @media screen and (min-width:$md) {
         grid-template-columns: repeat(2, 1fr);

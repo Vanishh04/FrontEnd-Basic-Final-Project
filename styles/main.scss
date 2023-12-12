@@ -3,6 +3,10 @@
 @import './carousel';
 @import './canDo';
 @import './team';
+@import './companies';
+@import './publications';
+@import './footer';
+
 /*----------------------------------------------------------------------------
                             HOMEPAGE
 ------------------------------------------------------------------------------*/
@@ -93,7 +97,13 @@
         display: inline-block;
         right: 8px;
     }
+    &-facebook{
+        width: 38px;
+        height: 38px;
+    }
 }
+
+
 
 .nav-link-h{
     color: $active-regular;

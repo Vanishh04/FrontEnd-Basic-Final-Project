@@ -24,8 +24,10 @@ $fz38: 38px;
 $fz30: 30px;
 $fz22: 22px;
 $fz18: 18px;
+$fz19: 19px;
 $fz16: 16px;
 $fz14: 14px;
+$fz96: 96px;
 
 $fw400: 400;
 $fw700: 700;
@@ -33,11 +35,13 @@ $fw700: 700;
 $lh47: 46.32px;
 $lh37: 36.57px;
 $lh27: 26.82px;
+$lh30:30px;
 $lh26: 26px;
 $lh20: 20px;
 $lh17: 17.07px;
 $lh15: 14.63px;
 $lh22: 22px;
+$lh117: 117px;
 
 .fz38{
     font-size: $fz38;
@@ -57,6 +61,12 @@ $lh22: 22px;
 .fz14{
     font-size: $fz14;
 }
+.fz19{
+    font-size: $fz19;
+}
+.fz96{
+    font-size: $fz96;
+}
 .fw700{
     font-weight: $fw700;
 }
@@ -75,6 +85,9 @@ $lh22: 22px;
 .lh20{
     line-height: $lh20;
 }
+.lh30{
+    line-height: $lh30;
+}
 .lh26{
     line-height: $lh26;
 }
@@ -86,6 +99,10 @@ $lh22: 22px;
 }
 .lh22{
     line-height: $lh22;
+}
+
+.lh117{
+    line-height: $lh117;
 }
 
 /* for color properties */
@@ -119,6 +136,7 @@ $gap15: 15px;
 $gap18: 18px;
 $gap26: 26px;
 $gap30: 30px;
+$gap60: 60px;
 
 .flex{
     display: flex;
@@ -156,6 +174,9 @@ $gap30: 30px;
 }
 .gap30{
     gap:$gap30;
+}
+.gap60{
+    gap:$gap60;
 }
 
 /* container */
@@ -236,6 +257,31 @@ html{
     border-radius: $bottom-right-rounded;
 }
 
+/* color */
+
+.grey-text{
+    color: $grey-text;
+}
+
 .active-regular{
     color: $active-regular;
+}
+
+.red-gradient{
+    background: $gradient-redtext;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.black{
+    color: $black;
+}
+
+.white{
+    color: $white;
+}
+
+.accent{
+    color: $accent;
 }

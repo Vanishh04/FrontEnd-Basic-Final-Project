@@ -91,6 +91,14 @@ body {
   font-size: 14px;
 }
 
+.fz19 {
+  font-size: 19px;
+}
+
+.fz96 {
+  font-size: 96px;
+}
+
 .fw700 {
   font-weight: 700;
 }
@@ -115,6 +123,10 @@ body {
   line-height: 20px;
 }
 
+.lh30 {
+  line-height: 30px;
+}
+
 .lh26 {
   line-height: 26px;
 }
@@ -129,6 +141,10 @@ body {
 
 .lh22 {
   line-height: 22px;
+}
+
+.lh117 {
+  line-height: 117px;
 }
 
 /* for color properties */
@@ -180,6 +196,10 @@ body {
 
 .gap30 {
   gap: 30px;
+}
+
+.gap60 {
+  gap: 60px;
 }
 
 /* container */
@@ -254,8 +274,32 @@ html {
   border-radius: 0 0 12px 0;
 }
 
+/* color */
+.grey-text {
+  color: #B3B3BA;
+}
+
 .active-regular {
   color: #24A3FF;
+}
+
+.red-gradient {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.accent {
+  color: #F0145A;
 }
 
 .carousel-indicators.carousel-indicators-h [data-bs-target] {
@@ -539,6 +583,65 @@ html {
   color: #B3B3BA;
 }
 
+.about-wrap__header {
+  padding-top: 50px;
+  padding-bottom: 66px;
+}
+
+.about-section__main-title-textbox {
+  max-width: 662px;
+  width: 100%;
+}
+.about-section__main-title-textbox-title {
+  padding-bottom: 28px;
+}
+.about-section__main-title-iconbox {
+  border-left: 4px #E6E6F0 solid;
+  padding-left: 34px;
+  max-width: 388px;
+}
+.about-section__main-title-icon-item {
+  padding-bottom: 40px;
+}
+.about-section__main-title-icon-item:last-child {
+  padding-bottom: 0px;
+}
+.about-section__main-title-content {
+  padding-bottom: 60px;
+}
+.about-section__img-poster {
+  position: relative;
+}
+.about-section__quality-p {
+  max-width: 658px;
+}
+.about-section__quality-h {
+  max-width: 362px;
+}
+.about-section__quality-section {
+  padding: 60px 0;
+}
+
+.about-paragaph-1 {
+  padding-bottom: 15px;
+}
+
+.about-icon-img {
+  padding-bottom: 10px;
+}
+
+.img-poster-item {
+  width: 100%;
+}
+
+.img-poster-title {
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 63px;
+  text-shadow: 0px 15px 30px 0px rgba(40, 40, 86, 0.8);
+  padding-top: 5px;
+}
+
 /*----------------------------------------------------------------------------
                             HOMEPAGE
 ------------------------------------------------------------------------------*/
@@ -638,10 +741,75 @@ html {
 
 .nav-link-h {
   color: #24A3FF;
+  position: relative;
+  transition: all 1s ease;
+}
+.nav-link-h.active {
+  color: #F0145A;
+}
+.nav-link-h.active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #F0145A;
+  top: 20px;
+}
+.nav-link-h::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #F0145A;
+  top: 20px;
+  transition: all 0.8s ease;
+}
+.nav-link-h:hover {
+  color: #F0145A;
+}
+.nav-link-h:hover::before {
+  width: 100%;
 }
 @media screen and (min-width: 576px) {
   .nav-link-h {
     color: #ffffff;
+  }
+}
+
+.link {
+  color: #ffffff;
+  position: relative;
+  transition: all 1s ease;
+}
+.link.active {
+  color: #F0145A;
+}
+.link.active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #F0145A;
+  top: 20px;
+}
+.link::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #F0145A;
+  top: 20px;
+  transition: all 0.8s ease;
+}
+.link:hover {
+  color: #F0145A;
+}
+.link:hover::before {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .link {
+    color: #24A3FF;
   }
 }
 

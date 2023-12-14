@@ -9,6 +9,10 @@
         padding-top: 30px;
         padding-bottom: 21px;
     }
+    &__copyright-detail{
+        padding-top: 30px;
+        padding-bottom: 21px;
+    }
     &__social-links{
         padding-bottom: 39px;
     }
@@ -29,4 +33,23 @@
     &-company{
         color: $grey-text;
     }
+}
+
+.footer-grid{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'address copyright' 'contact copyright';
+    &__address{
+        grid-area: address;
+    }
+    &__copyright{
+        grid-area: copyright;
+    }
+    &__contact{
+        grid-area: contact;
+    }
+    @media screen and (max-width:$md) {
+        grid-template-areas: 'address' 'copyright' 'contact';
+    }
+    
 }

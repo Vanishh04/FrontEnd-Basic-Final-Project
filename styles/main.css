@@ -302,6 +302,14 @@ html {
   color: #F0145A;
 }
 
+.main-regular {
+  color: #323264;
+}
+
+.grey-bg {
+  background-color: #F5F5FA;
+}
+
 .carousel-indicators.carousel-indicators-h [data-bs-target] {
   text-indent: 0px;
   width: auto;
@@ -565,6 +573,10 @@ html {
   padding-top: 30px;
   padding-bottom: 21px;
 }
+.footer-section__copyright-detail {
+  padding-top: 30px;
+  padding-bottom: 21px;
+}
 .footer-section__social-links {
   padding-bottom: 39px;
 }
@@ -581,6 +593,26 @@ html {
 }
 .address-item-company {
   color: #B3B3BA;
+}
+
+.footer-grid {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "address copyright" "contact copyright";
+}
+.footer-grid__address {
+  grid-area: address;
+}
+.footer-grid__copyright {
+  grid-area: copyright;
+}
+.footer-grid__contact {
+  grid-area: contact;
+}
+@media screen and (max-width: 768px) {
+  .footer-grid {
+    grid-template-areas: "address" "copyright" "contact";
+  }
 }
 
 .about-wrap__header {
@@ -621,6 +653,14 @@ html {
 .about-section__quality-section {
   padding: 60px 0;
 }
+.about-section__achievements-main-title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+.about-section-carousel__btn {
+  padding: 30px 0;
+}
 
 .about-paragaph-1 {
   padding-bottom: 15px;
@@ -632,6 +672,7 @@ html {
 
 .img-poster-item {
   width: 100%;
+  max-width: 1440px;
 }
 
 .img-poster-title {
